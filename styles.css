@@ -1,0 +1,149 @@
+body {
+  background-color: #122C55;
+  color: #D8D5CC;
+}
+
+aside,
+.navbar {
+  background-color: #1E3669;
+  color: #D8D5CC;
+}
+
+.card,
+.list-group-item,
+.form-control,
+.form-control:focus {
+  background-color: #283F70;
+  color: #D8D5CC;
+}
+
+.list-group,
+.navbar {
+  border-color: #1E3669;
+}
+
+.card,
+.list-group-item,
+.form-control {
+  border-color: #283F70;
+}
+
+.navbar {
+  background-color: #1E3669 !important;
+}
+
+.form-control:focus {
+  border-color: #F54CEC;
+  box-shadow: 0 0 0 0.2rem rgba(245, 76, 236, 0.25);
+}
+
+.list-group-item .form-control,
+.list-group-item .form-control:focus {
+  background-color: #283F70;
+}
+
+.settings-controls .list-group-item {
+  background-color: #1E3669;
+  border-color: #1E3669;
+}
+
+.border-right,
+.border-top,
+.border-primary,
+.border-secondary,
+.border-success {
+  border-color: #1E3669 !important;
+}
+
+.text-muted {
+  color: #D8D5CC !important;
+}
+
+.friend-avatar {
+  flex-shrink: 0;
+  object-fit: cover;
+}
+
+.profile-avatar {
+  object-fit: cover;
+}
+
+.custom-control-input:checked ~ .custom-control-label::before {
+  background-color: #F54CEC;
+  border-color: #F54CEC;
+}
+
+.custom-control-label::before {
+  background-color: #B6A6E7;
+  border-color: #B6A6E7;
+}
+
+.custom-switch .custom-control-label::before {
+  background-color: #ADB5BD;
+  border-color: #ADB5BD;
+}
+
+.custom-switch .custom-control-label::after {
+  background-color: #FFF3B0;
+}
+
+.nav-link {
+  color: #D8D5CC !important;
+}
+
+.nav-pills .nav-link.active,
+.nav-link.active,
+.nav-link:hover,
+.nav-link:focus,
+.nav-link:active {
+  color: #0E1221 !important;
+  background-color: #F54CEC !important;
+}
+
+.btn {
+  color: #D8D5CC;
+  background-color: #B6A6E7;
+  border-color: #B6A6E7;
+}
+
+.btn-outline-primary {
+  color: #0E1221;
+}
+
+.card .btn-outline-secondary {
+  color: #0E1221;
+}
+
+.btn:hover,
+.btn:focus,
+.btn:active,
+.btn.active,
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+  color: #0E1221;
+  background-color: #F54CEC;
+  border-color: #F54CEC;
+  box-shadow: none;
+}
+
+.btn:not(:disabled):not(.disabled).active,
+.btn:not(:disabled):not(.disabled):active {
+  color: #0E1221;
+  background-color: #F54CEC;
+  border-color: #F54CEC;
+}
+
+.btn-link,
+.btn-link:hover,
+.btn-link:focus,
+.btn-link:active {
+  background-color: transparent;
+  border-color: transparent;
+  box-shadow: none;
+}
+
+.btn-link svg {
+  color: #B6A6E7;
+}
