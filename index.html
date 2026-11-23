@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="ru">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -8,178 +9,198 @@
   <link rel="stylesheet" href="styles.css">
   <title>Главная</title>
 </head>
+
 <body>
 
-<div class="container-fluid">
-  <div class="row">
+  <div class="container-fluid">
+    <div class="row">
 
-    <!-- Боковая панель (на телефоне скрыта, вместо неё нижнее меню) -->
-    <aside class="col-md-3 col-xl-2 d-none d-md-block border-right min-vh-100 pt-3">
-      <nav>
-        <ul class="nav nav-pills flex-column">
-          <li class="nav-item"><a class="nav-link active" href="index.html">Главная</a></li>
-          <li class="nav-item"><a class="nav-link" href="feed.html">Сиянье</a></li>
-          <li class="nav-item"><a class="nav-link" href="friends.html">Друзья</a></li>
-          <li class="nav-item"><a class="nav-link" href="settings.html">Настройки</a></li>
-        </ul>
-      </nav>
+      <!-- Боковая панель (на телефоне скрыта, вместо неё нижнее меню) -->
+      <aside class="col-md-3 col-xl-2 d-none d-md-block border-right min-vh-100 pt-3">
+        <nav>
+          <ul class="nav nav-pills flex-column">
+            <li class="nav-item"><a class="nav-link active" href="index.html">Главная</a></li>
+            <li class="nav-item"><a class="nav-link" href="feed.html">Сиянье</a></li>
+            <li class="nav-item"><a class="nav-link" href="friends.html">Друзья</a></li>
+            <li class="nav-item"><a class="nav-link" href="settings.html">Настройки</a></li>
+          </ul>
+        </nav>
 
-      <div class="form-group mt-5">
-        <label for="date">Дата</label>
-        <input type="date" class="form-control" id="date" value="2026-11-23">
-      </div>
-    </aside>
+        <div class="form-group mt-5">
+          <label for="date">Дата</label>
+          <input type="date" class="form-control" id="date" value="2026-11-23">
+        </div>
+      </aside>
 
-    <!-- Основное содержимое -->
-    <main class="col-12 col-md-9 col-xl-10 pt-3 pb-5 mb-5 mb-md-0">
-      <h1 class="h4 mb-3">Расписание</h1>
-      <!-- Шкала: 8 интервалов по 5rem + высота последней подписи (1.5rem) -->
-      <div class="overflow-auto">
-      <div class="position-relative" style="height: 41.5rem; min-width: 80rem">
+      <!-- Основное содержимое -->
+      <main class="col-12 col-md-9 col-xl-10 pt-3 pb-5 mb-5 mb-md-0">
+        <h1 class="h4 mb-3">Расписание</h1>
+        <!-- Шкала: 8 интервалов по 5rem + высота последней подписи (1.5rem) -->
+        <div class="overflow-auto">
+          <div class="position-relative" style="height: 41.5rem; min-width: 80rem">
 
-        <!-- Слой 1: время и линии (равные промежутки за счёт justify-content-between) -->
-        <div class="position-absolute w-100 h-100 d-flex flex-column justify-content-between">
-        <div class="d-flex align-items-center">
-          <span class="pr-2 text-muted">8:00</span>
-          <div class="flex-grow-1 border-top"></div>
-        </div>
-        <div class="d-flex align-items-center">
-          <span class="pr-2 text-muted">9:00</span>
-          <div class="flex-grow-1 border-top"></div>
-        </div>
-        <div class="d-flex align-items-center">
-          <span class="pr-2 text-muted">10:00</span>
-          <div class="flex-grow-1 border-top"></div>
-        </div>
-        <div class="d-flex align-items-center">
-          <span class="pr-2 text-muted">11:00</span>
-          <div class="flex-grow-1 border-top"></div>
-        </div>
-        <div class="d-flex align-items-center">
-          <span class="pr-2 text-muted">12:00</span>
-          <div class="flex-grow-1 border-top"></div>
-        </div>
-        <div class="d-flex align-items-center">
-          <span class="pr-2 text-muted">13:00</span>
-          <div class="flex-grow-1 border-top"></div>
-        </div>
-        <div class="d-flex align-items-center">
-          <span class="pr-2 text-muted">14:00</span>
-          <div class="flex-grow-1 border-top"></div>
-        </div>
-        <div class="d-flex align-items-center">
-          <span class="pr-2 text-muted">15:00</span>
-          <div class="flex-grow-1 border-top"></div>
-        </div>
-        <div class="d-flex align-items-center">
-          <span class="pr-2 text-muted">16:00</span>
-          <div class="flex-grow-1 border-top"></div>
-        </div>
-        </div>
+            <!-- Слой 1: время и линии (равные промежутки за счёт justify-content-between) -->
+            <div class="position-absolute w-100 h-100 d-flex flex-column justify-content-between">
+              <div class="d-flex align-items-center">
+                <span class="pr-2 text-muted">8:00</span>
+                <div class="flex-grow-1 border-top"></div>
+              </div>
+              <div class="d-flex align-items-center">
+                <span class="pr-2 text-muted">9:00</span>
+                <div class="flex-grow-1 border-top"></div>
+              </div>
+              <div class="d-flex align-items-center">
+                <span class="pr-2 text-muted">10:00</span>
+                <div class="flex-grow-1 border-top"></div>
+              </div>
+              <div class="d-flex align-items-center">
+                <span class="pr-2 text-muted">11:00</span>
+                <div class="flex-grow-1 border-top"></div>
+              </div>
+              <div class="d-flex align-items-center">
+                <span class="pr-2 text-muted">12:00</span>
+                <div class="flex-grow-1 border-top"></div>
+              </div>
+              <div class="d-flex align-items-center">
+                <span class="pr-2 text-muted">13:00</span>
+                <div class="flex-grow-1 border-top"></div>
+              </div>
+              <div class="d-flex align-items-center">
+                <span class="pr-2 text-muted">14:00</span>
+                <div class="flex-grow-1 border-top"></div>
+              </div>
+              <div class="d-flex align-items-center">
+                <span class="pr-2 text-muted">15:00</span>
+                <div class="flex-grow-1 border-top"></div>
+              </div>
+              <div class="d-flex align-items-center">
+                <span class="pr-2 text-muted">16:00</span>
+                <div class="flex-grow-1 border-top"></div>
+              </div>
+            </div>
 
-        <!-- Слой 2: пары поверх шкалы, позиция = время начала -->
-        <div class="position-absolute pl-5 ml-2" style="top: .75rem; bottom: 0; left: 0; right: 0">
-          <div class="d-flex h-100">
-        <div class="position-relative h-100 flex-shrink-0" style="width: 25rem">
-          <div class="card border-primary position-absolute overflow-hidden" style="top: 0.0rem; height: 6.67rem; left: 0; width: 18.75rem">
-            <div class="card-body d-flex flex-column justify-content-between p-2 h-100">
-              <h6 class="card-title mb-0 overflow-hidden">Алгоритмы и структуры данных</h6>
-              <div class="d-flex justify-content-between small">
-                <span>Лекция · ауд. 351</span>
-                <span>Иванов И.И.</span>
+            <!-- Слой 2: пары поверх шкалы, позиция = время начала -->
+            <div class="position-absolute pl-5 ml-2" style="top: .75rem; bottom: 0; left: 0; right: 0">
+              <div class="d-flex h-100">
+                <div class="position-relative h-100 flex-shrink-0" style="width: 25rem">
+                  <div class="card border-primary position-absolute overflow-hidden"
+                    style="top: 0.0rem; height: 6.67rem; left: 0; width: 18.75rem">
+                    <div class="card-body d-flex flex-column justify-content-between p-2 h-100">
+                      <h6 class="card-title mb-0 overflow-hidden">Алгоритмы и структуры данных</h6>
+                      <div class="d-flex justify-content-between small">
+                        <span>Лекция · ауд. 351</span>
+                        <span>Иванов И.И.</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card border-primary position-absolute overflow-hidden"
+                    style="top: 7.5rem; height: 6.67rem; left: 0; width: 18.75rem">
+                    <div class="card-body d-flex flex-column justify-content-between p-2 h-100">
+                      <h6 class="card-title mb-0 overflow-hidden">Базы данных</h6>
+                      <div class="d-flex justify-content-between small">
+                        <span>Практика · ауд. 351</span>
+                        <span>Петрова А.С.</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card border-primary position-absolute overflow-hidden"
+                    style="top: 15.0rem; height: 6.67rem; left: 0; width: 18.75rem">
+                    <div class="card-body d-flex flex-column justify-content-between p-2 h-100">
+                      <h6 class="card-title mb-0 overflow-hidden">Операционные системы</h6>
+                      <div class="d-flex justify-content-between small">
+                        <span>Лекция · ауд. 351</span>
+                        <span>Смирнов Д.В.</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card border-primary position-absolute overflow-hidden"
+                    style="top: 22.5rem; height: 6.67rem; left: 0; width: 18.75rem">
+                    <div class="card-body d-flex flex-column justify-content-between p-2 h-100">
+                      <h6 class="card-title mb-0 overflow-hidden">Веб-разработка</h6>
+                      <div class="d-flex justify-content-between small">
+                        <span>Лабораторная · ауд. 351</span>
+                        <span>Кузнецова Е.А.</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="position-relative h-100 flex-shrink-0" style="width: 25rem">
+                  <div class="card border-success position-absolute overflow-hidden"
+                    style="top: 15.0rem; height: 6.67rem; left: 0; width: 18.75rem">
+                    <div class="card-body d-flex flex-column justify-content-between p-2 h-100">
+                      <h6 class="card-title mb-0 overflow-hidden">Математический анализ</h6>
+                      <div class="d-flex justify-content-between small">
+                        <span>Практика · ауд. 204</span>
+                        <span>Петрова А.С.</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card border-success position-absolute overflow-hidden"
+                    style="top: 22.5rem; height: 6.67rem; left: 0; width: 18.75rem">
+                    <div class="card-body d-flex flex-column justify-content-between p-2 h-100">
+                      <h6 class="card-title mb-0 overflow-hidden">Английский язык</h6>
+                      <div class="d-flex justify-content-between small">
+                        <span>Практика · ауд. 204</span>
+                        <span>Соколова М.А.</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="position-relative h-100 flex-shrink-0" style="width: 25rem">
+                  <div class="card border-secondary position-absolute overflow-hidden"
+                    style="top: 3.75rem; height: 6.67rem; left: 0; width: 18.75rem">
+                    <div class="card-body d-flex flex-column justify-content-between p-2 h-100">
+                      <h6 class="card-title mb-0 overflow-hidden">Физическая культура</h6>
+                      <div class="d-flex justify-content-between small">
+                        <span>Практика · спортзал</span>
+                        <span>Орлов В.П.</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card border-secondary position-absolute overflow-hidden"
+                    style="top: 12.5rem; height: 6.67rem; left: 0; width: 18.75rem">
+                    <div class="card-body d-flex flex-column justify-content-between p-2 h-100">
+                      <h6 class="card-title mb-0 overflow-hidden">Дискретная математика</h6>
+                      <div class="d-flex justify-content-between small">
+                        <span>Семинар · ауд. 118</span>
+                        <span>Кузнецова Е.А.</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="card border-primary position-absolute overflow-hidden" style="top: 7.5rem; height: 6.67rem; left: 0; width: 18.75rem">
-            <div class="card-body d-flex flex-column justify-content-between p-2 h-100">
-              <h6 class="card-title mb-0 overflow-hidden">Базы данных</h6>
-              <div class="d-flex justify-content-between small">
-                <span>Практика · ауд. 351</span>
-                <span>Петрова А.С.</span>
-              </div>
-            </div>
-          </div>
-          <div class="card border-primary position-absolute overflow-hidden" style="top: 15.0rem; height: 6.67rem; left: 0; width: 18.75rem">
-            <div class="card-body d-flex flex-column justify-content-between p-2 h-100">
-              <h6 class="card-title mb-0 overflow-hidden">Операционные системы</h6>
-              <div class="d-flex justify-content-between small">
-                <span>Лекция · ауд. 351</span>
-                <span>Смирнов Д.В.</span>
-              </div>
-            </div>
-          </div>
-          <div class="card border-primary position-absolute overflow-hidden" style="top: 22.5rem; height: 6.67rem; left: 0; width: 18.75rem">
-            <div class="card-body d-flex flex-column justify-content-between p-2 h-100">
-              <h6 class="card-title mb-0 overflow-hidden">Веб-разработка</h6>
-              <div class="d-flex justify-content-between small">
-                <span>Лабораторная · ауд. 351</span>
-                <span>Кузнецова Е.А.</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="position-relative h-100 flex-shrink-0" style="width: 25rem">
-          <div class="card border-success position-absolute overflow-hidden" style="top: 15.0rem; height: 6.67rem; left: 0; width: 18.75rem">
-            <div class="card-body d-flex flex-column justify-content-between p-2 h-100">
-              <h6 class="card-title mb-0 overflow-hidden">Математический анализ</h6>
-              <div class="d-flex justify-content-between small">
-                <span>Практика · ауд. 204</span>
-                <span>Петрова А.С.</span>
-              </div>
-            </div>
-          </div>
-          <div class="card border-success position-absolute overflow-hidden" style="top: 22.5rem; height: 6.67rem; left: 0; width: 18.75rem">
-            <div class="card-body d-flex flex-column justify-content-between p-2 h-100">
-              <h6 class="card-title mb-0 overflow-hidden">Английский язык</h6>
-              <div class="d-flex justify-content-between small">
-                <span>Практика · ауд. 204</span>
-                <span>Соколова М.А.</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="position-relative h-100 flex-shrink-0" style="width: 25rem">
-          <div class="card border-secondary position-absolute overflow-hidden" style="top: 3.75rem; height: 6.67rem; left: 0; width: 18.75rem">
-            <div class="card-body d-flex flex-column justify-content-between p-2 h-100">
-              <h6 class="card-title mb-0 overflow-hidden">Физическая культура</h6>
-              <div class="d-flex justify-content-between small">
-                <span>Практика · спортзал</span>
-                <span>Орлов В.П.</span>
-              </div>
-            </div>
-          </div>
-          <div class="card border-secondary position-absolute overflow-hidden" style="top: 12.5rem; height: 6.67rem; left: 0; width: 18.75rem">
-            <div class="card-body d-flex flex-column justify-content-between p-2 h-100">
-              <h6 class="card-title mb-0 overflow-hidden">Дискретная математика</h6>
-              <div class="d-flex justify-content-between small">
-                <span>Семинар · ауд. 118</span>
-                <span>Кузнецова Е.А.</span>
-              </div>
-            </div>
-          </div>
-        </div>
-          </div>
-        </div>
 
-      </div>
-      </div>
-    </main>
+          </div>
+        </div>
+      </main>
 
+    </div>
   </div>
-</div>
 
-<!-- Выбор даты для мобильной версии (над нижним меню) -->
-<div class="fixed-bottom d-md-none text-center mb-5 pb-3">
-  <label class="sr-only" for="date-mobile">Дата</label>
-  <input type="date" class="form-control date-float d-inline-block w-auto text-center" id="date-mobile" value="2026-11-23">
-</div>
+  <!-- Выбор даты для мобильной версии (над нижним меню) -->
+  <div class="fixed-bottom d-md-none text-center mb-5 pb-3">
+    <label class="sr-only" for="date-mobile">Дата</label>
+    <input type="date" class="form-control date-float d-inline-block w-auto text-center" id="date-mobile"
+      value="2026-11-23">
+  </div>
 
-<!-- Нижнее меню для узких экранов -->
-<nav class="navbar navbar-light bg-light fixed-bottom d-md-none justify-content-around">
+  <!-- Нижнее меню для узких экранов -->
+  <nav class="navbar navbar-light bg-light fixed-bottom d-md-none justify-content-around">
     <a class="nav-link active" href="index.html">Главная</a>
     <a class="nav-link" href="feed.html">Сиянье</a>
     <a class="nav-link" href="friends.html">Друзья</a>
     <a class="nav-link" href="settings.html">Настройки</a>
-</nav>
+  </nav>
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="site.js"></script>
 </body>
+
 </html>
