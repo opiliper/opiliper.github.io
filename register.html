@@ -12,19 +12,19 @@
 
 <div class="container min-vh-100 d-flex flex-column justify-content-center">
   <h1 class="text-center mb-5">Регистрация</h1>
-  <form class="col-12 col-sm-10 col-md-8 col-lg-5 col-xl-4 mx-auto">
+  <form class="col-12 col-sm-10 col-md-8 col-lg-5 col-xl-4 mx-auto" novalidate>
     <div class="form-group">
       <label for="login">Логин</label>
-      <input type="text" class="form-control" id="login" placeholder="Например, alex_01">
+      <input type="text" class="form-control" id="login" name="login" placeholder="Например, alex_01" required>
     </div>
     <div class="form-group">
       <label for="email">Почта</label>
-      <input type="email" class="form-control" id="email" placeholder="alex@example.com">
+      <input type="email" class="form-control" id="email" name="email" placeholder="alex@example.com" required>
     </div>
     <div class="form-group">
       <label for="password">Пароль</label>
       <div class="input-group">
-        <input type="password" class="form-control" id="password" placeholder="Не менее 8 символов">
+        <input type="password" class="form-control" id="password" name="password" placeholder="Не менее 8 символов" minlength="8" required>
         <div class="input-group-append">
           <button class="btn btn-outline-secondary" type="button">Показать пароль</button>
         </div>
@@ -34,5 +34,7 @@
     <p class="text-center mt-3">У вас уже есть аккаунт? <a href="login.html">Вход</a></p>
   </form>
 </div>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="site.js"></script>
 </body>
 </html>
